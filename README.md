@@ -17,3 +17,4 @@ bb : Eğer mesaj olarak bb yazısı gönderilirse bot "Bay bay!" olarak cevap ve
 kufur : Eğer kufurler txt sinin içinden bir küfür yazılırsa o mesajı siler ve uyarır.
 -----------------------------------------------------------
 bot.run içine discord/developers/applications/ websitesinden tokenini yerleştirmelidir.
+-----------------------------------------------------------
