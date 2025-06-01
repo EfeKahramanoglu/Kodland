@@ -48,16 +48,6 @@ async def choose(ctx, choices: str):
     """Chooses between multiple choices."""
     await ctx.send(random.choice(choices))
 
-@bot.command()
-async def yardim(ctx):
-    await ctx.send("Yardım komutları: .add komutu 2 sayıyı toplar, .choose komutu girdiğiniz cümlenin içinden rastgele bir harfi size verir.")
-
-#Bilgilendirme Komutu
-@bot.command(name='bilgi', help='Bot bilgilendirmesi')
-async def bilgi(ctx):
-    bilgi_cvp = "Bu Bot Koddunyam Discord Kanalinin Karsilama Botudur!"
-    await ctx.send(bilgi_cvp)
-
 # !kufuret yazildiginda olacak olan islem:
 @bot.command(name='kufuret', help='Botun Kufur etmesini saglar')
 async def kufur(ctx):
