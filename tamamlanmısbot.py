@@ -62,15 +62,6 @@ async def zar_at(ctx):
     zar = f'Sansina cikan zarlar: {a} ve {b}'
     await ctx.send(zar)
 
-# !topla sayi1 sayi2 ile toplama islemi yapmasini saglar
-@bot.command(name='topla',a=int,b=int,help="Toplama islemi yapmasini saglar")
-async def topla(ctx,a:int,b:int):
-    await ctx.send(a+b)
-
-@bot.command()
-async def sec(ctx, *sec:str):
-    await ctx.send(random.choice(sec))
-
 # !metin_kanali komutu ile yeni metin kanali acar
 @bot.command(name='metin_kanali', help='Metin Kanali olusturur')
 @commands.has_role("Admin")
