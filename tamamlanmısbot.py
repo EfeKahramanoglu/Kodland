@@ -106,14 +106,7 @@ async def on_message(message): # Botun hangi kanallardaki konusmalara bakmasi ge
 
     selam_alma = ['Sa','Selam','s.a','sa','slm','selam']
     bot_selamlama = ['Aleyna Aleyküm esselam', 'Ooooooo kimleri görüyorum', 'Vaaaaaay Sen yasiyor muydun ya?','Vay a.s Haci cav cav , nörüyon?', 'A.s ne geziyon buralarda?','Selamina selam cigerim!','Bana selam verme selam tutmayi... Yok yok konular karisti.. A.s','Dedi naber dedim iyidir... A.s genc!','Merhabalar, Discord Kanalina Hosgeldiniz... NÖRÜYON Cigerparem?']
-    orca = ['ORCA kim','orca kim', 'Orca kim']
     bot_mesajlari = ["Buyrun Efenim", "Buyrun Efendim", "Ne var lan!"]
-    if 'mikael kim' in message.content.lower():
-        await message.channel.send('ADAM Kodun icinden geciyor öyle bi abimizdir! ')
-
-    for yunus in orca:
-        if yunus in message.content.lower():
-            await message.channel.send('ADAM Kodun icinden geciyor öyle bi abimizdir! ')
 
 
     if message.content.lower() in selam_alma:
@@ -126,11 +119,6 @@ async def on_message(message): # Botun hangi kanallardaki konusmalara bakmasi ge
             return
     if 'bb' in message.content.lower():
         await message.channel.send('Bay bay!')
-        if message.author == client.user:
-            return
-
-    elif 'özel ders' in message.content.lower():
-        await message.channel.send('ssssss Ozel ders Konusu acilinca Saizzou sövüyor!')
         if message.author == client.user:
             return
 
